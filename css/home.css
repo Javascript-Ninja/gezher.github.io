@@ -5,10 +5,14 @@
 html, body {
   height: 100%;
 }
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
 .head {
   padding: 0;
   background:  url("/images/head.png") no-repeat ;
-  background-size:  auto 100%;
+  background-size:  100% 100%;
   height: 90vh;
   padding-top: 10vh;
   text-align: center;
@@ -53,9 +57,13 @@ img {
   }
 }
 .phone {
+  height: 23vh;
   margin-bottom: 3.5vh;
   opacity: 0;
   animation : .5s play-ani 1.2s forwards;
+}
+.down-arrow {
+  height: 3vh;
 }
 
 .title {
@@ -73,7 +81,7 @@ img {
 
 .main {
   height: 73vh;
-  padding: 8vh 20vw 0;
+  padding-top: 8vh;
 }
 
 .row:after {
@@ -96,21 +104,21 @@ img {
 
 .main .row h3 {
   font-size: 24px;
-  margin: 40px 0 32px;
+  margin: 3vh 0 2vh;
   color: #002261;
 }
 .main .row p {
-  font-size: 18px;
+  font-size: 2vh;
   color: #999;
   line-height: 1.8;
 }
 
 .farm > .right {
-  padding: 0 10vw 0 5vw;
+  padding: 0 14vw 0 5vw;
 }
 .app > .left {
   text-align: left !important;
-  padding: 0 8vw 0 4vw;
+  padding: 0 8vw 0 14vw;
 }
 .farm > * {
   height: 33vh;
@@ -120,8 +128,11 @@ img {
 }
 
 .footer {
+  padding: 0 15vw;
+}
+.footer .container {
+  width: 70vw;
   border-top: 1px solid #eee;
-  margin: 0 20vw;
   padding: 4vh 4vw;
   height: 17vh;
   overflow: hidden;
@@ -130,23 +141,23 @@ img {
   float: left;
   height: 9vh;
   padding: 2vh 0;
-  width: 10vw;
+  width: 14vw;
 }
 .footer .center {
   float: left;
   height: 9vh;
   padding-left: 2vw;
-  width: 22vw;
+  width: 25vw;
 }
 .footer .center > p {
-  font-size: 15px;
-  line-height: 2.2;
+  font-size: 1vh;
+  line-height: 1.8;
   color: #999;
 }
 .footer .right{
   float: left;
   height: 9vh;
-  width: 20vw;
+  width: 22vw;
   text-align: right;
 }
 .footer .right > img {
@@ -162,6 +173,7 @@ img {
   .head {
     height: 100vh;
     padding: 10vh 5vw 0;
+    background-size: auto 100%;
   } 
   .head .phone {
     display: none;
