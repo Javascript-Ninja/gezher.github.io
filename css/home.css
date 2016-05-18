@@ -43,7 +43,7 @@ img {
 }
 .intro > .item{
   color: #fff;
-  font-size: 20px;
+  font-size: 3vh;
   line-height: 2.2;
   font-weight: lighter;
   letter-spacing: 0.1em;
@@ -75,7 +75,7 @@ img {
 .title .title-line {
   display: inline-block;
   padding: 0 2em;
-  font-size: 32px;
+  font-size: 4vh;
   color: #ccc;
 }
 
