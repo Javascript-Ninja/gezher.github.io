@@ -149,13 +149,14 @@ img {
   padding-left: 2vw;
   width: 25vw;
 }
-.footer .center > p {
+.footer .center > p > a {
   font-size: 1vh;
   line-height: 1.8;
   color: #999;
+  text-decoration: none;
 }
-.footer .right{
-  float: left;
+.footer .right {
+  float: right;
   height: 9vh;
   width: 22vw;
   text-align: right;
@@ -168,8 +169,13 @@ img {
   font-size: 12px;
   color: #999;
 }
+@media(min-width: 770px) and (max-width: 1119px) {
+  .main .app .left {
+    padding-left: 10vw;
+  }
+}
 
-@media(max-width: 600px) {
+@media(max-width: 769px) {
   .head {
     height: 100vh;
     padding: 10vh 5vw 0;
@@ -227,10 +233,26 @@ img {
     display: none;
   }
   .footer .center {
-    display: none;
+    width: 100%;
+  }
+  .footer .center .phone-num {
+    float: left;
+    width: 50%;
+  }
+  .footer .center .mail {
+    float: left;
+    width: 50%;
+  }
+  .footer .center .addr {
+    float: left;
+    width: 100%;
   }
   .footer .right {
     width: 100%;
     text-align: center;
+    height: 5vh;
+  }
+  .footer .right .copy-right {
+    display: none;
   }
 }
